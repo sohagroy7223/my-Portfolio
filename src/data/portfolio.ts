@@ -15,7 +15,8 @@ export const projects = [
   {
     id: "p0",
     name: "Smart-deals",
-    description: "A smart deals & offers site showcasing curated products with a modern, responsive UI.",
+    description:
+      "A smart deals & offers site showcasing curated products with a modern, responsive UI.",
     image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900&q=80",
     tech: ["React", "Tailwind"],
     category: "Web App",
@@ -27,7 +28,8 @@ export const projects = [
   {
     id: "p1",
     name: "Travel-Grue",
-    description: "A modern travel booking site with destination listings, booking flow and responsive UI.",
+    description:
+      "A modern travel booking site with destination listings, booking flow and responsive UI.",
     image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=900&q=80",
     tech: ["React", "Tailwind", "React Router"],
     category: "Web App",
@@ -51,7 +53,8 @@ export const projects = [
   {
     id: "p3",
     name: "Doctors",
-    description: "A doctors / healthcare landing site with elegant sections, services, and smooth scrolling.",
+    description:
+      "A doctors / healthcare landing site with elegant sections, services, and smooth scrolling.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=80",
     tech: ["React", "Tailwind"],
     category: "Website",

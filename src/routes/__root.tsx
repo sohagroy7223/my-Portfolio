@@ -81,10 +81,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Sohag Roy — Frontend Developer" },
-      { name: "description", content: "Portfolio of Sohag Roy — Frontend developer building modern, responsive web apps with React, Tailwind, and more." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Sohag Roy — Frontend developer building modern, responsive web apps with React, Tailwind, and more.",
+      },
       { name: "author", content: "Sohag Roy" },
       { property: "og:title", content: "Sohag Roy — Frontend Developer" },
-      { property: "og:description", content: "Portfolio of Sohag Roy — Frontend developer building modern, responsive web apps." },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Sohag Roy — Frontend developer building modern, responsive web apps.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -134,4 +142,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-

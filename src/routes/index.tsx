@@ -6,12 +6,15 @@ import sohag from "@/assets/sohag.png.asset.json";
 import { PageTransition, Reveal, Section } from "@/components/ui-bits";
 import { skills, projects, blogPosts } from "@/data/portfolio";
 
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Sohag Roy — Frontend Developer Portfolio" },
-      { name: "description", content: "I build modern, responsive web apps with React, Tailwind CSS, and a touch of motion." },
+      {
+        name: "description",
+        content:
+          "I build modern, responsive web apps with React, Tailwind CSS, and a touch of motion.",
+      },
       { property: "og:title", content: "Sohag Roy — Frontend Developer" },
       { property: "og:description", content: "Portfolio, projects, and blog by Sohag Roy." },
       { property: "og:url", content: "/" },
@@ -59,8 +62,14 @@ function HomePage() {
         {/* gradient blobs */}
         <div className="pointer-events-none absolute inset-0 -z-10">
           <div className="absolute -left-32 top-10 h-80 w-80 rounded-full bg-primary/30 blur-3xl animate-blob" />
-          <div className="absolute right-0 top-40 h-96 w-96 rounded-full bg-secondary/30 blur-3xl animate-blob" style={{ animationDelay: "3s" }} />
-          <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-accent/30 blur-3xl animate-blob" style={{ animationDelay: "6s" }} />
+          <div
+            className="absolute right-0 top-40 h-96 w-96 rounded-full bg-secondary/30 blur-3xl animate-blob"
+            style={{ animationDelay: "3s" }}
+          />
+          <div
+            className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-accent/30 blur-3xl animate-blob"
+            style={{ animationDelay: "6s" }}
+          />
         </div>
 
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-16 md:grid-cols-2 md:pt-24">
@@ -82,7 +91,9 @@ function HomePage() {
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-5 max-w-lg text-base text-muted-foreground">
-                I create modern, responsive, and accessible web applications using React, Tailwind CSS, JavaScript, and REST APIs. I'm always eager to learn new technologies and contribute to real-world projects.
+                I create modern, responsive, and accessible web applications using React, Tailwind
+                CSS, JavaScript, and REST APIs. I'm always eager to learn new technologies and
+                contribute to real-world projects.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
@@ -153,7 +164,11 @@ function HomePage() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <Reveal>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I'm Sohag Roy, a passionate Frontend Developer who enjoys building modern, responsive, and user-friendly web applications. I primarily work with React, Tailwind CSS, JavaScript, and Firebase, while also exploring backend technologies like Node.js, Express.js, and MongoDB. I love learning new technologies, solving real-world problems, and continuously improving my development skills
+              I'm Sohag Roy, a passionate Frontend Developer who enjoys building modern, responsive,
+              and user-friendly web applications. I primarily work with React, Tailwind CSS,
+              JavaScript, and Firebase, while also exploring backend technologies like Node.js,
+              Express.js, and MongoDB. I love learning new technologies, solving real-world
+              problems, and continuously improving my development skills
             </p>
             <Link
               to="/about"
@@ -181,7 +196,11 @@ function HomePage() {
       </Section>
 
       {/* SKILLS */}
-      <Section eyebrow="Skills" title="My Tech Stack" subtitle="The technologies and tools I use to build modern, responsive, and user-friendly web applications.">
+      <Section
+        eyebrow="Skills"
+        title="My Tech Stack"
+        subtitle="The technologies and tools I use to build modern, responsive, and user-friendly web applications."
+      >
         <div className="grid gap-5 sm:grid-cols-2">
           {skills.map((s, idx) => (
             <Reveal key={s.name} delay={idx * 0.04}>
@@ -206,29 +225,46 @@ function HomePage() {
       </Section>
 
       {/* FEATURED PROJECTS */}
-      <Section eyebrow="Work" title="Featured projects" subtitle="A selection of recent things I have built.">
+      <Section
+        eyebrow="Work"
+        title="Featured projects"
+        subtitle="A selection of recent things I have built."
+      >
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, 3).map((p, i) => (
             <Reveal key={p.id} delay={i * 0.06}>
               <div className="group glass overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:shadow-glow">
                 <div className="aspect-video overflow-hidden">
-                  <img src={p.image} alt={p.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-semibold">{p.name}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {p.tech.map((t) => (
-                      <span key={t} className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+                      <span
+                        key={t}
+                        className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+                      >
                         {t}
                       </span>
                     ))}
                   </div>
                   <div className="mt-4 flex gap-2">
-                    <a href={p.demo} className="inline-flex items-center gap-1 rounded-lg bg-hero-gradient px-3 py-1.5 text-xs font-semibold text-white">
+                    <a
+                      href={p.demo}
+                      className="inline-flex items-center gap-1 rounded-lg bg-hero-gradient px-3 py-1.5 text-xs font-semibold text-white"
+                    >
                       <FiExternalLink /> Demo
                     </a>
-                    <a href={p.github} className="inline-flex items-center gap-1 rounded-lg border border-border px-3 py-1.5 text-xs font-semibold">
+                    <a
+                      href={p.github}
+                      className="inline-flex items-center gap-1 rounded-lg border border-border px-3 py-1.5 text-xs font-semibold"
+                    >
                       <FiGithub /> Code
                     </a>
                   </div>
@@ -238,7 +274,10 @@ function HomePage() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Link to="/projects" className="inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all">
+          <Link
+            to="/projects"
+            className="inline-flex items-center gap-2 font-semibold text-primary hover:gap-3 transition-all"
+          >
             See all projects <FiArrowRight />
           </Link>
         </div>
@@ -273,7 +312,9 @@ function HomePage() {
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl bg-hero-gradient p-10 text-center text-white shadow-glow sm:p-16">
             <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/20 blur-3xl" />
-            <h3 className="font-display text-3xl font-bold sm:text-4xl">Let's build something great together</h3>
+            <h3 className="font-display text-3xl font-bold sm:text-4xl">
+              Let's build something great together
+            </h3>
             <p className="mx-auto mt-3 max-w-xl text-white/90">
               Have a project in mind or just want to say hi? I'd love to hear from you.
             </p>

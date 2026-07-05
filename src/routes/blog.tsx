@@ -8,7 +8,10 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "Blog — Sohag Roy" },
-      { name: "description", content: "Articles on React, frontend craft, and modern web tooling by Sohag Roy." },
+      {
+        name: "description",
+        content: "Articles on React, frontend craft, and modern web tooling by Sohag Roy.",
+      },
       { property: "og:title", content: "Blog — Sohag Roy" },
       { property: "og:description", content: "Articles on frontend development." },
       { property: "og:url", content: "/blog" },
@@ -27,14 +30,21 @@ function BlogPage() {
   const filtered = useMemo(() => {
     return blogPosts.filter((p) => {
       const matchCat = cat === "All" || p.category === cat;
-      const matchQ = !q || p.title.toLowerCase().includes(q.toLowerCase()) || p.excerpt.toLowerCase().includes(q.toLowerCase());
+      const matchQ =
+        !q ||
+        p.title.toLowerCase().includes(q.toLowerCase()) ||
+        p.excerpt.toLowerCase().includes(q.toLowerCase());
       return matchCat && matchQ;
     });
   }, [cat, q]);
 
   return (
     <PageTransition>
-      <Section eyebrow="Blog" title="Notes from the craft" subtitle="Things I've learned along the way.">
+      <Section
+        eyebrow="Blog"
+        title="Notes from the craft"
+        subtitle="Things I've learned along the way."
+      >
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-wrap gap-2">
             {categories.map((c) => (
@@ -42,7 +52,9 @@ function BlogPage() {
                 key={c}
                 onClick={() => setCat(c)}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  cat === c ? "bg-hero-gradient text-white shadow-glow" : "border border-border bg-card hover:bg-muted"
+                  cat === c
+                    ? "bg-hero-gradient text-white shadow-glow"
+                    : "border border-border bg-card hover:bg-muted"
                 }`}
               >
                 {c}
@@ -65,11 +77,17 @@ function BlogPage() {
             <Reveal key={b.id} delay={i * 0.05}>
               <article className="group glass flex h-full flex-col overflow-hidden rounded-2xl transition-transform hover:-translate-y-1">
                 <div className="aspect-video overflow-hidden">
-                  <img src={b.image} alt={b.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img
+                    src={b.image}
+                    alt={b.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span className="rounded-full bg-accent/15 px-2 py-0.5 font-medium text-accent-foreground">{b.category}</span>
+                    <span className="rounded-full bg-accent/15 px-2 py-0.5 font-medium text-accent-foreground">
+                      {b.category}
+                    </span>
                     <span>·</span>
                     <span>{b.date}</span>
                     <span>·</span>
@@ -85,7 +103,9 @@ function BlogPage() {
             </Reveal>
           ))}
         </div>
-        {filtered.length === 0 && <p className="mt-10 text-center text-muted-foreground">No posts found.</p>}
+        {filtered.length === 0 && (
+          <p className="mt-10 text-center text-muted-foreground">No posts found.</p>
+        )}
       </Section>
     </PageTransition>
   );

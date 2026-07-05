@@ -7,7 +7,9 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 font-display text-lg font-bold">
-            <span className="grid h-8 w-8 place-items-center rounded-xl bg-hero-gradient text-white">S</span>
+            <span className="grid h-8 w-8 place-items-center rounded-xl bg-hero-gradient text-white">
+              S
+            </span>
             <span className="text-gradient">Sohag Roy</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
@@ -25,7 +27,9 @@ export function Footer() {
               { to: "/contact", l: "Contact" },
             ].map((x) => (
               <li key={x.to}>
-                <Link to={x.to} className="hover:text-foreground">{x.l}</Link>
+                <Link to={x.to} className="hover:text-foreground">
+                  {x.l}
+                </Link>
               </li>
             ))}
           </ul>

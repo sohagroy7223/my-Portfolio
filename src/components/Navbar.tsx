@@ -21,7 +21,9 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full">
       <div className="glass mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-2xl px-5 py-3 shadow-sm sm:mx-4 lg:mx-auto">
         <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-          <span className="grid h-8 w-8 place-items-center rounded-xl bg-hero-gradient text-white shadow-glow">S</span>
+          <span className="grid h-8 w-8 place-items-center rounded-xl bg-hero-gradient text-white shadow-glow">
+            S
+          </span>
           <span className="text-gradient">Sohag Roy</span>
         </Link>
 

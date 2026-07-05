@@ -9,7 +9,10 @@ export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
       { title: "Projects — Sohag Roy" },
-      { name: "description", content: "Selected projects by Sohag Roy across web apps, e-commerce, and tools." },
+      {
+        name: "description",
+        content: "Selected projects by Sohag Roy across web apps, e-commerce, and tools.",
+      },
       { property: "og:title", content: "Projects — Sohag Roy" },
       { property: "og:description", content: "A showcase of recent work." },
       { property: "og:url", content: "/projects" },
@@ -82,15 +85,26 @@ function ProjectsPage() {
                 onClick={() => setOpen(p)}
               >
                 <div className="aspect-video overflow-hidden">
-                  <img src={p.image} alt={p.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
                 <div className="p-5">
-                  <div className="text-xs font-semibold uppercase tracking-wider text-primary">{p.category}</div>
+                  <div className="text-xs font-semibold uppercase tracking-wider text-primary">
+                    {p.category}
+                  </div>
                   <h3 className="mt-1 text-lg font-semibold">{p.name}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {p.tech.map((t) => (
-                      <span key={t} className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">{t}</span>
+                      <span
+                        key={t}
+                        className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+                      >
+                        {t}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -129,19 +143,32 @@ function ProjectsPage() {
               </button>
               <img src={open.image} alt={open.name} className="h-56 w-full object-cover" />
               <div className="p-6">
-                <div className="text-xs font-semibold uppercase tracking-wider text-primary">{open.category}</div>
+                <div className="text-xs font-semibold uppercase tracking-wider text-primary">
+                  {open.category}
+                </div>
                 <h3 className="mt-1 text-2xl font-bold">{open.name}</h3>
                 <p className="mt-3 text-muted-foreground">{open.details}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {open.tech.map((t) => (
-                    <span key={t} className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">{t}</span>
+                    <span
+                      key={t}
+                      className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary"
+                    >
+                      {t}
+                    </span>
                   ))}
                 </div>
                 <div className="mt-6 flex gap-3">
-                  <a href={open.demo} className="inline-flex items-center gap-2 rounded-xl bg-hero-gradient px-4 py-2 text-sm font-semibold text-white">
+                  <a
+                    href={open.demo}
+                    className="inline-flex items-center gap-2 rounded-xl bg-hero-gradient px-4 py-2 text-sm font-semibold text-white"
+                  >
                     <FiExternalLink /> Live Demo
                   </a>
-                  <a href={open.github} className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold">
+                  <a
+                    href={open.github}
+                    className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold"
+                  >
                     <FiGithub /> GitHub
                   </a>
                 </div>
