@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FiDownload, FiMail, FiArrowRight, FiGithub, FiExternalLink } from "react-icons/fi";
-import sohag from "@/assets/sohag.png.asset.json";
+// import sohag from "@/assets/sohag.png.asset.json";
+import sohag from "@/assets/sohag.png"
 import { PageTransition, Reveal, Section } from "@/components/ui-bits";
 import { skills, projects, blogPosts } from "@/data/portfolio";
 
@@ -126,7 +127,7 @@ function HomePage() {
               <div className="glass rounded-[2rem] p-2 shadow-glow">
                 <div className="overflow-hidden rounded-[1.5rem] bg-hero-gradient">
                   <img
-                    src={sohag.url}
+                    src={sohag}
                     alt="Sohag Roy — Frontend Developer"
                     className="h-[380px] w-[320px] object-cover sm:h-[440px] sm:w-[360px]"
                   />
