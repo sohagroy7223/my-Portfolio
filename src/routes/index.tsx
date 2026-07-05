@@ -100,7 +100,7 @@ function HomePage() {
             <Reveal delay={0.2}>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="/public/Resume - Google Docs.pdf"
+                  href="/public/Resume - Google Docs (1).pdf"
                   download
                   className="inline-flex items-center gap-2 rounded-xl bg-hero-gradient px-5 py-3 text-sm font-semibold text-white shadow-glow transition-transform hover:-translate-y-0.5"
                 >
