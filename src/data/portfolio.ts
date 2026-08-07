@@ -14,6 +14,19 @@ export const skills = [
 export const projects = [
   {
     id: "p0",
+    name: "Career-Code",
+    description:
+      "Career Opportunities & offers site showcasing curated products with a modern, responsive UI.",
+    image: "https://i.ibb.co.com/sdHqksSc/career-code-banner.png",
+    tech: ["Node", " JS", "Tailwind"],
+    category: "Web App",
+    demo: "https://fluffy-heliotrope-ed5743.netlify.app/",
+    github: "https://github.com/sohagroy7223/",
+    details:
+      "career code  is a find jobs place and offers showcase built with React ,node express and Tailwind. Features product cards, categories, and a clean responsive layout.",
+  },
+  {
+    id: "p1",
     name: "Smart-deals",
     description:
       "A smart deals & offers site showcasing curated products with a modern, responsive UI.",
@@ -21,12 +34,12 @@ export const projects = [
     tech: ["React", "Tailwind"],
     category: "Web App",
     demo: "https://jocular-bubblegum-b645e3.netlify.app/",
-    github: "#",
+    github: "https://github.com/sohagroy7223/",
     details:
       "Smart-deals is a deals and offers showcase built with React and Tailwind. Features product cards, categories, and a clean responsive layout.",
   },
   {
-    id: "p1",
+    id: "p2",
     name: "Travel-Grue",
     description:
       "A modern travel booking site with destination listings, booking flow and responsive UI.",
@@ -34,24 +47,24 @@ export const projects = [
     tech: ["React", "Tailwind", "React Router"],
     category: "Web App",
     demo: "https://travel-grue.surge.sh/",
-    github: "#",
+    github: "https://github.com/sohagroy7223/",
     details:
       "Travel-Grue is a travel booking experience built with React. It features destination listings, a booking flow, protected routes, and a fully responsive UI.",
   },
   {
-    id: "p2",
+    id: "p3",
     name: "Dragon News",
     description: "A news portal with categories, authentication, and a clean reading experience.",
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80",
     tech: ["React", "Firebase", "Tailwind"],
     category: "Website",
     demo: "https://preeminent-semolina-3ad709.netlify.app/",
-    github: "#",
+    github: "https://github.com/sohagroy7223/",
     details:
       "Dragon News is a category-based news portal built with React and Firebase auth. Features include login/register, protected news details, and a responsive 3-column layout.",
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Doctors",
     description:
       "A doctors / healthcare landing site with elegant sections, services, and smooth scrolling.",
@@ -59,19 +72,19 @@ export const projects = [
     tech: ["React", "Tailwind"],
     category: "Website",
     demo: "https://symphonious-jalebi-67b983.netlify.app/",
-    github: "#",
+    github: "https://github.com/sohagroy7223/",
     details:
       "Doctors is a healthcare-themed landing site with hero, services, team, and contact sections. Focused on layout, typography and responsive design.",
   },
   {
-    id: "p4",
+    id: "p5",
     name: "Book",
     description: "A book-listing application with search, filters and detailed book views.",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80",
     tech: ["React", "Tailwind"],
     category: "Web App",
     demo: "https://flourishing-eclair-3c933b.netlify.app/",
-    github: "#",
+    github: "https://github.com/sohagroy7223/",
     details:
       "A book browsing app built with React. Includes a catalog of books, search/filter, and a detailed view per book with a clean, readable UI.",
   },
