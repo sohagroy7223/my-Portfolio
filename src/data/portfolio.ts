@@ -18,8 +18,8 @@ export const projects = [
     description:
       "Career Opportunities & offers site showcasing curated products with a modern, responsive UI.",
     image: "https://i.ibb.co.com/sdHqksSc/career-code-banner.png",
-    tech: ["Node", " JS", "Tailwind"],
-    category: "Web App",
+    tech: ["Node", "React", " JS", "Tailwind"],
+    category: "Website",
     demo: "https://fluffy-heliotrope-ed5743.netlify.app/",
     github: "https://github.com/sohagroy7223/",
     details:
