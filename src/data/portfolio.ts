@@ -20,7 +20,7 @@ export const projects = [
     image: "https://i.ibb.co.com/sdHqksSc/career-code-banner.png",
     tech: ["Node", "React", " JS", "Tailwind"],
     category: "Website",
-    demo: "https://fluffy-heliotrope-ed5743.netlify.app/",
+    demo: "https://sohag-career-code.netlify.app/",
     github: "https://github.com/sohagroy7223/",
     details:
       "career code  is a find jobs place and offers showcase built with React ,node express and Tailwind. Features product cards, categories, and a clean responsive layout.",
