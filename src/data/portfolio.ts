@@ -16,7 +16,7 @@ export const projects = [
     id: "p",
     name: "Zap-Shift",
     description:
-      "Zap Shift is a full-stack parcel delivery platform. secure payments, delivery tracking, and rider management simple and efficient. It includes dedicated dashboards for riders, and admins with a responsive, modern interface.",
+      "Zap Shift is a full-stack parcel delivery platform. secure payments, delivery and rider management web. here is a dashboards for riders, and admins with modern interface.",
     image: "https://i.ibb.co.com/9kKy52vS/zap-Shift.png",
     tech: ["Node", "React", " JS", "Tailwind"],
     category: "Website",
