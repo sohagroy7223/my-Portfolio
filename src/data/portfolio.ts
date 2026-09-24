@@ -13,6 +13,19 @@ export const skills = [
 
 export const projects = [
   {
+    id: "p",
+    name: "Zap-Shift",
+    description:
+      "Zap Shift is a full-stack parcel delivery platform. secure payments, delivery tracking, and rider management simple and efficient. It includes dedicated dashboards for riders, and admins with a responsive, modern interface.",
+    image: "https://i.ibb.co.com/9kKy52vS/zap-Shift.png",
+    tech: ["Node", "React", " JS", "Tailwind"],
+    category: "Website",
+    demo: "https://zap-shift-client1.onrender.com/",
+    github: "https://github.com/sohagroy7223/",
+    details:
+      "Zap Shift is a parcel delivery management platform where users can send parcels, pay for, and track parcels. Admins can manage deliveries and riders, while riders can handle assigned deliveries and update delivery status.",
+  },
+  {
     id: "p0",
     name: "Career-Code",
     description:
@@ -20,7 +33,7 @@ export const projects = [
     image: "https://i.ibb.co.com/sdHqksSc/career-code-banner.png",
     tech: ["Node", "React", " JS", "Tailwind"],
     category: "Website",
-    demo: "https://sohag-career-code.netlify.app/",
+    demo: "https://sohag-career-code.netlify.app/__",
     github: "https://github.com/sohagroy7223/",
     details:
       "career code  is a find jobs place and offers showcase built with React ,node express and Tailwind. Features product cards, categories, and a clean responsive layout.",
