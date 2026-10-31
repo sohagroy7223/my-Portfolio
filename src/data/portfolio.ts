@@ -27,6 +27,19 @@ export const projects = [
   },
   {
     id: "p0",
+    name: "Solevo-Web",
+    description:
+      "An e-commerce website showcasing curated shoe collections with a modern, responsive UI, product browsing, shopping cart, and secure Stripe payments.",
+    image: "https://i.ibb.co.com/rggSDkx/Solevo-web.png",
+    tech: ["Node", "React", " JS", "Tailwind"],
+    category: "Website",
+    demo: "https://solevo-web.onrender.com/",
+    github: "https://github.com/sohagroy7223/Solevo-web",
+    details:
+      "Solevo is a modern shoe e-commerce website built with React, Node.js, Express.js, and Tailwind CSS. It features curated shoe collections, product cards, category-based browsing, shopping cart management, Firebase authentication, and secure Stripe payments, all wrapped in a clean and responsive UI.",
+  },
+  {
+    id: "p1",
     name: "Career-Code",
     description:
       "Career Opportunities & offers site showcasing curated products with a modern, responsive UI.",
@@ -39,7 +52,7 @@ export const projects = [
       "career code  is a find jobs place and offers showcase built with React ,node express and Tailwind. Features product cards, categories, and a clean responsive layout.",
   },
   {
-    id: "p1",
+    id: "p2",
     name: "Smart-deals",
     description:
       "A smart deals & offers site showcasing curated products with a modern, responsive UI.",
@@ -52,7 +65,7 @@ export const projects = [
       "Smart-deals is a deals and offers showcase built with React and Tailwind. Features product cards, categories, and a clean responsive layout.",
   },
   {
-    id: "p2",
+    id: "p3",
     name: "Travel-Grue",
     description:
       "A modern travel booking site with destination listings, booking flow and responsive UI.",
@@ -65,7 +78,7 @@ export const projects = [
       "Travel-Grue is a travel booking experience built with React. It features destination listings, a booking flow, protected routes, and a fully responsive UI.",
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Dragon News",
     description: "A news portal with categories, authentication, and a clean reading experience.",
     image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&q=80",
@@ -77,7 +90,7 @@ export const projects = [
       "Dragon News is a category-based news portal built with React and Firebase auth. Features include login/register, protected news details, and a responsive 3-column layout.",
   },
   {
-    id: "p4",
+    id: "p5",
     name: "Doctors",
     description:
       "A doctors / healthcare landing site with elegant sections, services, and smooth scrolling.",
@@ -90,7 +103,7 @@ export const projects = [
       "Doctors is a healthcare-themed landing site with hero, services, team, and contact sections. Focused on layout, typography and responsive design.",
   },
   {
-    id: "p5",
+    id: "p6",
     name: "Book",
     description: "A book-listing application with search, filters and detailed book views.",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80",
